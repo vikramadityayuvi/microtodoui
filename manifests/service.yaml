@@ -3,6 +3,9 @@ kind: Service
 metadata:
   name: todo-ui
   namespace: default
+  annotations:
+    service.beta.kubernetes.io/azure-load-balancer-resource-group: thakurapt6519
+    service.beta.kubernetes.io/azure-pip-name: pip-dev-todoapp
   
 spec:
   type: LoadBalancer
